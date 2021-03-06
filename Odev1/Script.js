@@ -15,9 +15,11 @@ const newGame = () => {
         const image = cards[index];
         lastIndex = index;
         page = document.getElementById("img").src=image;
-        if(cards[0] === image){
-            document.getElementById("alanId").innerHTML="Kazandınız! Tebrik ederiz :) Yeni bir oyun oynamak isterseniz " +
-                "<span class='link' onclick='document.location.reload(true);'> buraya </span> tıklayabilirsiniz.";
+        switch (cards[0]) {
+            case image:
+                document.getElementById("alanId").innerHTML = "Kazandınız! Tebrik ederiz :) Yeni bir oyun oynamak isterseniz " +
+                    "<span class='link' onclick='document.location.reload(true);'> buraya </span> tıklayabilirsiniz.";
+                break;
         }
         guess-=1;
     }
@@ -37,9 +39,11 @@ const newGame1 = () => {
         lastIndex = index1;
 
         page1 = document.getElementById("img1").src=image1;
-        if(cards[0] === image1){
-            document.getElementById("alanId").innerHTML="Kazandınız! Tebrik ederiz :) Yeni bir oyun oynamak isterseniz " +
-                "<span class='link' onclick='document.location.reload(true);'> buraya </span> tıklayabilirsiniz.";
+        switch (cards[0]) {
+            case image1:
+                document.getElementById("alanId").innerHTML = "Kazandınız! Tebrik ederiz :) Yeni bir oyun oynamak isterseniz " +
+                    "<span class='link' onclick='document.location.reload(true);'> buraya </span> tıklayabilirsiniz.";
+                break;
         }
         guess-=1;
     }
@@ -57,9 +61,11 @@ const newGame2 = () => {
         const image2 = cards[index2];
         lastIndex = index2;
         page2 = document.getElementById("img2").src=image2;
-        if(cards[0] === image2){
-            document.getElementById("alanId").innerHTML="Kazandınız! Tebrik ederiz :) Yeni bir oyun oynamak isterseniz " +
-                "<span class='link' onclick='document.location.reload(true);'> buraya </span> tıklayabilirsiniz.";
+        switch (cards[0]) {
+            case image2:
+                document.getElementById("alanId").innerHTML = "Kazandınız! Tebrik ederiz :) Yeni bir oyun oynamak isterseniz " +
+                    "<span class='link' onclick='document.location.reload(true);'> buraya </span> tıklayabilirsiniz.";
+                break;
         }
         guess-=1;
     }
