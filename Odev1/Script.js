@@ -19,13 +19,14 @@ const newGame = () => {
         latestIndex = index;
         html = document.getElementById("img0").src=image;
         if(secondImages[0] === image){
-            document.getElementById("alanId").innerHTML="Kazandın, Tebrikler:) Yeni bir oyun oynamak istersen <span class='link' onclick='document.location.reload(true);'>buraya</span> tıklayabilirsin.";
+            document.getElementById("alanId").innerHTML="Kazandın!!! Tebrik ederiz :) Yeni bir oyun oynamak istersen <span class='link' onclick='document.location.reload(true);'>buraya</span> tıklayabilirsin.";
         }
         guess-=1;
     }else{
         document.getElementById("alanId").innerHTML="Kaybettin :( Yeni bir oyun oynamak istersen <span class='link' onclick='document.location.reload(true);'>buraya</span> tıklayabilirsin.";
     }
 }
+
 const newGame1 = () => {
     if(guess!==0){
         let index1 = Math.floor(Math.random()*secondImages.length);
