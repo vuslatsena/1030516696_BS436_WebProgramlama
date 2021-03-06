@@ -3,9 +3,7 @@ let page1;
 let page2;
 let guess = 2;
 let latestIndex;
-
-let sImages;
-sImages = ['cat.png', `dog.jpg`];
+let sImages = ["cat.png", "dog.jpg", "cat1.png"];
 
 const newGame = () => {
     if(guess!==0){
