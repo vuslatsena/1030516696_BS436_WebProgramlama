@@ -4,7 +4,8 @@ let page2;
 let guess = 2;
 let latestIndex;
 
-const sImages = ["cat.png","dog.jpg",];
+let sImages;
+sImages = ['cat.png', `dog.jpg`];
 
 const newGame = () => {
     if(guess!==0){
@@ -16,7 +17,7 @@ const newGame = () => {
         latestIndex = index;
         page = document.getElementById("img").src=image;
         if(sImages[0] === image){
-            document.getElementById("alanId").innerHTML="Kazandınız!!! Tebrik ederiz :) Yeni bir oyun oynamak isterseniz <span class='link' onclick='document.location.reload(true);'> buraya </span> tıklayabilirsiniz.";
+            document.getElementById("alanId").innerHTML="Kazandınız! Tebrik ederiz :) Yeni bir oyun oynamak isterseniz <span class='link' onclick='document.location.reload(true);'> buraya </span> tıklayabilirsiniz.";
         }
         guess-=1;
     }
