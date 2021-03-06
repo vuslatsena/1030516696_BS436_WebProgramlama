@@ -3,7 +3,9 @@ let page1;
 let page2;
 let guess = 2;
 let latestIndex;
-let sImages = ["cat.png", "dog.jpg", "cat1.png"];
+
+let sImages =  ["images/cat.png","images/dog.jpg","images/dog1.jpg"];
+
 const newGame = () => {
     if(guess!==0){
         let index = Math.floor(Math.random()*sImages.length);
