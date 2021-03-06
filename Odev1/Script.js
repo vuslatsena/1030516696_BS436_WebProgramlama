@@ -1,8 +1,8 @@
-let guess = 2;
-let latestIndex;
 let page;
 let page1;
 let page2;
+let guess = 2;
+let latestIndex;
 
 const sImages = ["cat.png","dog.jpg",];
 
@@ -16,12 +16,12 @@ const newGame = () => {
         latestIndex = index;
         page = document.getElementById("img").src=image;
         if(sImages[0] === image){
-            document.getElementById("alanId").innerHTML="Kazandın!!! Tebrik ederiz :) Yeni bir oyun oynamak istersen <span class='link' onclick='document.location.reload(true);'>buraya</span> tıklayabilirsin.";
+            document.getElementById("alanId").innerHTML="Kazandınız!!! Tebrik ederiz :) Yeni bir oyun oynamak isterseniz <span class='link' onclick='document.location.reload(true);'> buraya </span> tıklayabilirsiniz.";
         }
         guess-=1;
     }
     else{
-        document.getElementById("alanId").innerHTML="Kaybettin :( Yeni bir oyun oynamak istersen <span class='link' onclick='document.location.reload(true);'>buraya</span> tıklayabilirsin.";
+        document.getElementById("alanId").innerHTML="Kaybettiniz :( Yeni bir oyun oynamak isterseniz <span class='link' onclick='document.location.reload(true);'> buraya </span> tıklayabilirsiniz.";
     }
 }
 
@@ -36,12 +36,12 @@ const newGame1 = () => {
 
         page1 = document.getElementById("img1").src=image1;
         if(sImages[0] === image1){
-            document.getElementById("alanId").innerHTML="Kazandın!!! Tebrik ederiz :) Yeni bir oyun oynamak istersen <span class='link' onclick='document.location.reload(true);'>buraya</span> tıklayabilirsin.";
+            document.getElementById("alanId").innerHTML="Kazandınız! Tebrik ederiz :) Yeni bir oyun oynamak isterseniz <span class='link' onclick='document.location.reload(true);'>buraya</span> tıklayabilirsiniz.";
         }
         guess-=1;
     }
     else{
-        document.getElementById("alanId").innerHTML="Kaybettin :( Yeni bir oyun oynamak istersen <span class='link' onclick='document.location.reload(true);'>buraya</span> tıklayabilirsin.";
+        document.getElementById("alanId").innerHTML="Kaybettiniz :( Yeni bir oyun oynamak isterseniz <span class='link' onclick='document.location.reload(true);'>buraya</span> tıklayabilirsiniz.";
     }
 }
 const newGame2 = () => {
@@ -54,11 +54,11 @@ const newGame2 = () => {
         latestIndex = index2;
         page2 = document.getElementById("img2").src=image2;
         if(sImages[0] === image2){
-            document.getElementById("alanId").innerHTML="Kazandın!!! Tebrik ederiz :) Yeni bir oyun oynamak istersen <span class='link' onclick='document.location.reload(true);'>buraya</span> tıklayabilirsin.";
+            document.getElementById("alanId").innerHTML="Kazandınız! Tebrik ederiz :) Yeni bir oyun oynamak isterseniz <span class='link' onclick='document.location.reload(true);'>buraya</span> tıklayabilirsiniz.";
         }
         guess-=1;
     }
     else{
-        document.getElementById("alanId").innerHTML="Kaybettin :( Yeni bir oyun oynamak istersen <span class='link' onclick='document.location.reload(true);'>buraya</span> tıklayabilirsin.";
+        document.getElementById("alanId").innerHTML="Kaybettiniz :( Yeni bir oyun oynamak isterseniz <span class='link' onclick='document.location.reload(true);'>buraya</span> tıklayabilirsiniz.";
     }
 }
