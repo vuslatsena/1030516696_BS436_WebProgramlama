@@ -6,7 +6,7 @@ let lastIndex;
 
 let cards =  ["images/cat.png","images/dog.jpg","images/dog1.jpg"];
 
-const newGame = () => {
+const Game = () => {
     if (guess === 0) {
         document.getElementById("alanId").innerHTML = "Kaybettiniz :( Yeni bir oyun oynamak isterseniz " +
             "<span class='link' onclick='document.location.reload(true);'> buraya </span> tıklayabilirsiniz.";
@@ -29,7 +29,7 @@ const newGame = () => {
     }
 }
 
-const newGame1 = () => {
+const Game1 = () => {
     if (guess === 0) {
         document.getElementById("alanId").innerHTML = "Kaybettiniz :( Yeni bir oyun oynamak isterseniz " +
             "<span class='link' onclick='document.location.reload(true);'> buraya </span> tıklayabilirsiniz.";
@@ -51,7 +51,7 @@ const newGame1 = () => {
         guess -= 1;
     }
 }
-const newGame2 = () => {
+const Game2 = () => {
     if (guess === 0) {
         document.getElementById("alanId").innerHTML = "Kaybettiniz :( Yeni bir oyun oynamak isterseniz " +
             "<span class='link' onclick='document.location.reload(true);'> buraya </span> tıklayabilirsiniz.";
