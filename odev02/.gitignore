@@ -1,4 +1,4 @@
 *node_modules
 /newfolder/*
-*.ide
+*.idea
 /newfolder/*
