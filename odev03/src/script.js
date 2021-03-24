@@ -12,12 +12,12 @@ let count = 0;
 let isFinished = false;
 let catIndex = Math.floor(Math.random() * 3);
 
-function click1() {
+const click1 = () => {
     if (catIndex === 0) {
-        card1.setAttribute('class', 'card-WithCat');
+        card1.setAttribute('class', 'card-Cat');
         isFinished = true;
     } else {
-        card1.setAttribute('class', 'card-WithDog');
+        card1.setAttribute('class', 'card-Dog');
         count++;
     }
     if(count === 2){
@@ -37,21 +37,18 @@ function click1() {
         card2.style.pointerEvents = "none";
         card3.style.pointerEvents = "none";
     }
-}
-
-function click2() {
+};
+const click2 = () => {
     if (catIndex === 1) {
-        card2.setAttribute('class', 'card-WithCat');
+        card2.setAttribute('class', 'card-Cat');
         isFinished = true;
     } else {
-        card2.setAttribute('class', 'card-WithDog');
+        card2.setAttribute('class', 'card-Dog');
         count++;
     }
-
     if (count === 2) {
         isFinished = true;
     }
-
     if (isFinished && count < 2) {
         alan.style.display = "none";
         kazandi.style.display = "block";
@@ -66,14 +63,14 @@ function click2() {
         card2.style.pointerEvents = "none";
         card3.style.pointerEvents = "none";
     }
-}
+};
 
-function click3() {
+const click3 = () => {
     if (catIndex === 2) {
-        card3.setAttribute('class', 'card-WithCat');
+        card3.setAttribute('class', 'card-Cat');
         isFinished = true;
     } else {
-        card3.setAttribute('class', 'card-WithDog');
+        card3.setAttribute('class', 'card-Dog');
         count++;
     }
 
@@ -93,4 +90,6 @@ function click3() {
         card2.style.pointerEvents = "none";
         card3.style.pointerEvents = "none";
     }
-}
+};
+
+//Burada ise unused constant click1, click2 ve click3 olarak bir uyarı alıyorum.

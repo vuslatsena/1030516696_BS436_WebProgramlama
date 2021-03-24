@@ -26,14 +26,14 @@ p.description {
     height: 220px;
     margin-left: 20px;
 }
-.card-WithDog {
+.card-Dog {
     float:left;
     width: 180px;
     height: 220px;
     margin-left: 20px;
     background-image: url("images/dog.jpg");
 }
-.card-WithCat {
+.card-Cat {
     float:left;
     width: 180px;
     height: 220px;
