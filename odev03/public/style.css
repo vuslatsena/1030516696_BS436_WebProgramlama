@@ -26,7 +26,13 @@ p.description {
     height: 220px;
     margin-left: 20px;
 }
-
+.card-WithDog {
+    float:left;
+    width: 180px;
+    height: 220px;
+    margin-left: 20px;
+    background-image: url("images/dog.jpg");
+}
 .card-WithCat {
     float:left;
     width: 180px;
@@ -35,10 +41,3 @@ p.description {
     background-image: url("images/cat.png");
 }
 
-.card-WithDog {
-    float:left;
-    width: 180px;
-    height: 220px;
-    margin-left: 20px;
-    background-image: url("images/dog.jpg");
-}

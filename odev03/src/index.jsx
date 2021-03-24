@@ -17,9 +17,9 @@ class App extends React.Component {
                     <p class="description">Bu oyunda 3 kapalı kart içindeki kediyi bulman gerekmektedir. İlk tercihte Kedi kartını bulamaz isen 2. seçim hakkı tanınacaktır.</p>
                 </div>
                 <div class="cards">
-                    <div id="card1" class="card" onclick="click1()"></div>
-                    <div id="card2" class="card" onclick="click2()"></div>
-                    <div id="card3" class="card" onclick="click3()"></div>
+                    <div id="card1" class="card" onClick="click1()"/>
+                    <div id="card2" class="card" onClick="click2()"/>
+                    <div id="card3" class="card" onClick="click3()"/>
                 </div>
                 <div class="footer">
                     <p id="alanId" class="description">
@@ -41,3 +41,5 @@ class App extends React.Component {
     }
 }
 ReactDOM.render(<App />, document.getElementById("root"));
+
+//Burada cannot resolve file "index.html" hatası aldığım için boş ekran görüntüsü ile karşılaşıyorum.
