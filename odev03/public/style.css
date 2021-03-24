@@ -2,16 +2,13 @@
     background-color: rgb(218, 214, 214);
     height: 500px;
 }
-
 h2.title {
     text-align: center;
     color: rgb(77, 47, 40);
 }
-
 p.description {
     text-align: center;
 }
-
 .cards {
     float:left;
     width: 100%;
@@ -22,7 +19,6 @@ p.description {
     justify-content: center;
     cursor: pointer;
 }
-
 .card {
     float:left;
     background-color: blue;
