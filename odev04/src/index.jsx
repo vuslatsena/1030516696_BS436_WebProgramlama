@@ -14,34 +14,33 @@ class App extends React.Component{
         }
     }
 
-
     kediSec = (index) => {
         const { kart, kediIndex, kartSayac, oyunSonlandi } = this.state;
 
         if(!oyunSonlandi){
-        const yeniKart = [...kart];
-        let durum;
+            const yeniKart = [...kart];
+            let durum;
 
-        if(kediIndex===index){
-            yeniKart[index] = "img/Kedi.jpg";
-            durum = "Kazandınız :)"
-        }else {
-            yeniKart[index] = "img/Kopek.jpg";
-            if(kartSayac===1){
-                durum = "Kaybettiniz :("
+            if(kediIndex===index){
+                yeniKart[index] = "img/Kedi.jpg";
+                durum = "Kazandınız :)"
+            }else {
+                yeniKart[index] = "img/Kopek.jpg";
+                if(kartSayac===1){
+                    durum = "Kaybettiniz :("
+                }
             }
-        }
-        this.setState({
-            kart:yeniKart,
-            kartSayac: this.state.kartSayac+1,
-            durum
-        });
-
-        if(durum){
             this.setState({
-                oyunSonlandi: true
-            })
-        }
+                kart:yeniKart,
+                kartSayac: this.state.kartSayac+1,
+                durum
+            });
+
+            if(durum){
+                this.setState({
+                    oyunSonlandi: true
+                })
+            }
 
         }
     }
