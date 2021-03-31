@@ -5,21 +5,17 @@ html, body {
     text-align: center;
     font-size: 1.2em;
 }
-
-
-.kart {
+.card {
     margin: 20px;
     height: 300px;
     border: 2px solid black;
     border-radius: 5px;
     cursor: pointer;
 }
-
-.mesaj{
+.message {
     background-color: green;
     color: black;
 }
-
 .link{
     color: blue;
     cursor: pointer;

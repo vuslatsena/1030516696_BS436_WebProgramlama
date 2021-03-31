@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0786686-f201-44e9-b739-ec4104629a9a" name="Default Changelist" comment="">
+    <list default="true" id="b3f95340-7768-47ec-a9b3-20a7b762385f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Game-test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Game-test.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/jest-setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/jest-setup.js" afterDir="false" />
@@ -14,17 +16,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1qQhGy4z1EqMgPJABOwwD0nE6Tw" />
+  <component name="ProjectId" id="1qWQ28hqwQVZaPWKU1yQHXrntbQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,8 +33,18 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Jest.Geçersiz kartlar">
-    <configuration name="Geçersiz kartlar" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.All Tests">
+    <configuration name="All Tests" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <jest-options value="--coverage" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="kaybetme" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -48,11 +53,11 @@
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/tests/Game-test.jsx" />
       <test-names>
-        <test-name value="Geçersiz kartlar" />
+        <test-name value="kaybetme" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Unnamed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="lose" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -61,11 +66,11 @@
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/tests/Game-test.jsx" />
       <test-names>
-        <test-name value="" />
+        <test-name value="lose" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Çoklu kart seçimi testi" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="win" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -74,28 +79,49 @@
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/tests/Game-test.jsx" />
       <test-names>
-        <test-name value="Çoklu kart seçimi testi" />
+        <test-name value="win" />
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="yeniOyun" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/Game-test.jsx" />
+      <test-names>
+        <test-name value="yeniOyun" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Jest.All Tests" />
+      <item itemvalue="Jest.kaybetme" />
+      <item itemvalue="Jest.lose" />
+      <item itemvalue="Jest.win" />
+      <item itemvalue="Jest.yeniOyun" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.Geçersiz kartlar" />
-        <item itemvalue="Jest.Çoklu kart seçimi testi" />
-        <item itemvalue="Jest.Unnamed" />
+        <item itemvalue="Jest.All Tests" />
+        <item itemvalue="Jest.win" />
+        <item itemvalue="Jest.lose" />
+        <item itemvalue="Jest.kaybetme" />
+        <item itemvalue="Jest.yeniOyun" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f0786686-f201-44e9-b739-ec4104629a9a" name="Default Changelist" comment="" />
-      <created>1617017628447</created>
+      <changelist id="b3f95340-7768-47ec-a9b3-20a7b762385f" name="Default Changelist" comment="" />
+      <created>1617192658039</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1617017628447</updated>
-      <workItem from="1617017629537" duration="7000" />
-      <workItem from="1617032484304" duration="1436000" />
+      <updated>1617192658039</updated>
+      <workItem from="1617192659862" duration="4161000" />
     </task>
     <servers />
   </component>
@@ -112,6 +138,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

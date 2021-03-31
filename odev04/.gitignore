@@ -1,5 +1,1 @@
-*node_modules
-/newfolder/*
-/**/.idea/*
-
-
+node_modules

@@ -1,27 +1,73 @@
-import { } from "../src/script";
+const React = require('react');
+const {mount} = require('enzyme');
+const {Game} = require('../src/Game');
 
-test('Geçersiz kartlar', () => {
-    expect(() => { click1() }).toThrow();
-    expect(() => { click2() }).toThrow();
-    expect(() => { click3() }).toThrow();
-});
+//Kaybetme Durumu Testi
 
-test("", () => {
-    const click1 = click1();
-    const click2 = click2();
-    const click3 = click3();
+test('lose',() =>{
+    const driver = mount(<Game/>);
+    //mount içinde yazan componentin adı. HTML dosyamızın içerisinde gömülmüş oluyor.
+    let card = driver.find('.card').at(0);
+    //css elemanlarını alıyoruz.
+    card.simulate('click');
+    card.find("img").prop("src");
 
-    expect(click1).toBeDefined();
-    expect(click2).toBeDefined();
-    expect(click3).toBeDefined();
-});
+    card = driver.find('.card').at(0);
+    let srcName = card.find("img").prop("src")
+    expect(srcName === 'img/Kopek.jpg');
 
-test("Çoklu kart seçimi testi", () => {
+} )
 
-    for (let i = 0; i < 1000; i++) {
-        const quizzes = getRandomQuizzes(2);
+//Kazanma Durumu Testi
 
-        expect(quizzes.length).toBe(2);
-        expect(quizzes[0].question).not.toBe(quizzes[1].question);
-    }
-});
+test('win',() =>{
+    const driver = mount(<Game/>);
+
+    let card = driver.find('.card').at(0);
+
+    card.simulate('click');
+    card.find("img").prop("src");
+
+    card = driver.find('.card').at(0);
+    let srcName = card.find("img").prop("src")
+    expect(srcName === 'img/Kedi.jpg');
+
+} )
+
+//Kart Tıklama Durumu Testi
+
+test('CardClick',()=>{
+    const driver = mount(<Game/>);
+
+    let card = driver.find('.card').at(0);
+
+    card.simulate('click');
+    card.find("img").prop("src");
+
+    card = driver.find('.card').at(1);
+    card.simulate('click');
+
+    card = driver.find('.card').at(2);
+    card.simulate('click');
+
+    card = driver.find('.card').at(0);
+    let srcName = card.find("img").prop("src")
+    expect(srcName === 'img/Kopek.jpg' || srcName ==='img/Kedi.jpg').toBeTruthy();
+
+} )
+
+//Yeni Oyun Durumu Testi
+
+test('newGame' ,() =>{
+    const driver = mount(<Game/>);
+    let card = driver.find('.card').at(0);
+    card.simulate('click');
+    card = driver.find('.card').at(1);
+    card.simulate('click');
+
+    let yenidenBaslat = driver.find('.link');
+    yenidenBaslat.simulate('click');
+
+
+} )
+
