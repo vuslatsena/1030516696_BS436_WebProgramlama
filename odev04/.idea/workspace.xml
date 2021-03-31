@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f95340-7768-47ec-a9b3-20a7b762385f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Game-test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Game-test.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/jest-setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/jest-setup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/clover.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/clover.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/coverage-final.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/coverage-final.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/Game.jsx.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/Game.jsx.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/index.jsx.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/index.jsx.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,8 +105,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Jest.All Tests" />
-        <item itemvalue="Jest.win" />
         <item itemvalue="Jest.lose" />
+        <item itemvalue="Jest.win" />
         <item itemvalue="Jest.kaybetme" />
         <item itemvalue="Jest.yeniOyun" />
       </list>
@@ -121,7 +120,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617192658039</updated>
-      <workItem from="1617192659862" duration="4161000" />
+      <workItem from="1617192659862" duration="4417000" />
+      <workItem from="1617209818540" duration="876000" />
     </task>
     <servers />
   </component>
@@ -138,5 +138,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
