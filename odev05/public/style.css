@@ -28,7 +28,6 @@ html, body {
 .action {
     padding: 1rem 0;
 }
-
 .play {
     background-color: #ebe9e4;
     color: #000000;
@@ -37,7 +36,6 @@ html, body {
     border-radius: 5px;
     margin-top: 1rem;
 }
-
 .play:focus,.play:hover{
     background-color: #2d1ed6;
     color: #ebe9e4;
@@ -54,7 +52,6 @@ html, body {
     align-items: center;
 
 }
-
 .new-game-button{
     align-self: center;
 }

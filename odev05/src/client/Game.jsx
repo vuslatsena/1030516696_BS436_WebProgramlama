@@ -6,11 +6,13 @@ export class Game extends Component {
         this.state = {
             kediIndex: Math.floor(Math.random()*3),
             status: undefined,
-            card: ["img/ArkaKapak.png","img/ArkaKapak.png","img/ArkaKapak.png"],
+            card: ["public/img/ArkaKapak.png","img/ArkaKapak.png","img/ArkaKapak.png"],
             cardCounter : 0,
             gameOver: false
         }
     }
+
+
     pickCat = (index) => {
         const { card, kediIndex, cardCounter , gameOver } = this.state;
         if(!gameOver){
@@ -18,10 +20,10 @@ export class Game extends Component {
             let status;
 
             if(kediIndex===index){
-                newCard[index] = "img/Kedi.jpg";
+                newCard[index] = "public/img/Kedi.jpg";
                 status = "Kazandınız :)"
             }else {
-                newCard[index] = "img/Kopek.jpg";
+                newCard[index] = "public/img/Kopek.jpg";
                 if(cardCounter===1){
                     status = "Kaybettiniz :("
                 }
@@ -44,7 +46,7 @@ export class Game extends Component {
         this.setState({
             kediIndex: Math.floor(Math.random()*3),
             status: undefined,
-            card: ["img/ArkaKapak.png","img/ArkaKapak.png","img/ArkaKapak.png"],
+            card: ["public/img/ArkaKapak.png","public/img/ArkaKapak.png","/public/img/ArkaKapak.png"],
             cardStatus: 0,
             gameOver: false
         })
@@ -60,7 +62,8 @@ export class Game extends Component {
                 <img className="card" src={card[2]} onClick={()=>{this.pickCat(2)}}/>
                 <div className="message">
                     <p>{status?status:"Kedi kartını bulmak için kartın üzerine tıklamalısın."}</p>
-                    {status && <p>Yeni bir oyun oynamak istersen <span onClick={this.yeniOyun} className='link'>buraya</span> tıklayabilirsin.</p>}
+                    {status && <p>Yeni bir oyun oynamak istersen <span onClick={this.newGame} className='link'>buraya</span> tıklayabilirsin.
+                    </p>}
                 </div>
             </div>
         );
