@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for index.jsx</title>
+    <title>Code coverage report for game.jsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> index.jsx</h1>
+        <h1><a href="index.html">All files</a> game.jsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -72,44 +72,74 @@
 <a name='L13'></a><a href='#L13'>13</a>
 <a name='L14'></a><a href='#L14'>14</a>
 <a name='L15'></a><a href='#L15'>15</a>
-<a name='L16'></a><a href='#L16'>16</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from "react";
-import  ReactDOM from "react-dom";
-import {Game} from "./Game";
-&nbsp;
-class App extends React.Component{
-<span class="fstat-no" title="function not covered" >    re</span>nder(){
-<span class="cstat-no" title="statement not covered" >        return (</span>
-            &lt;div&gt;
-                &lt;Game/&gt;
-            &lt;/div&gt;
+import ReactDOM from "react-dom";
+import {Card} from "./card";
+class CardGame extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state = { 
+          result:Card
+        }
+        } 
+    render(){
+        return(
+            &lt;&gt;
+            &lt;div class="row"&gt;
+            &lt;div class="col-md-4"&gt;&lt;img className="cardclick"   onClick={this.state.result} id="img4"    src="images/card.png" /&gt;&lt;img id="img1" style={{objectFit:"contain","height" : "400px", "width" : "100%",position:"absolute",top:0,left:0,right:0,visibility:"hidden"}} /&gt;&lt;/div&gt;
+            &lt;div class="col-md-4"&gt;&lt;img className="cardclick"   onClick={this.state.result} id="img5"    src="images/card.png" /&gt;&lt;img id="img2" style={{objectFit:"contain","height" : "400px", "width" : "100%",position:"absolute",top:0,left:0,right:0,visibility:"hidden"}} /&gt;&lt;/div&gt;
+            &lt;div class="col-md-4"&gt;&lt;img className="cardclick"  onClick={this.state.result} id="img6"    src="images/card.png" /&gt;&lt;img id="img3" style={{objectFit:"contain","height" : "400px", "width" : "100%",position:"absolute",top:0,left:0,right:0,visibility:"hidden"}} /&gt;&lt;/div&gt;
+           &lt;/div&gt;
+           &lt;div class="text-center mt-5"&gt;
+             &lt;span id="text"&gt;Kedi kartını bulmak için kartın üzerine tıklamalısın&lt;/span&gt;
+           &lt;/div&gt;
+           &lt;/&gt;
         );
     }
 }
-<span class="cstat-no" title="statement not covered" >ReactDOM.render(&lt;App /&gt;, document.getElementById("root"));</span>
-&nbsp;
-&nbsp;</pre></td></tr></table></pre>
+export default CardGame;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sat Apr 03 2021 19:14:43 GMT+0300 (GMT+03:00)
+                at Mon Mar 29 2021 22:12:53 GMT+0300 (GMT+03:00)
             </div>
         </div>
         <script src="prettify.js"></script>
